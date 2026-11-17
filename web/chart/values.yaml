@@ -1,0 +1,15 @@
+app:
+  replicaCount: 1
+
+  image:
+    repository: ghcr.io/badilhq/demo-monorepo-web
+    tag: ""
+    pullPolicy: IfNotPresent
+
+  # nginx listens on 8080 (web/nginx.conf), the app chart's default port.
+  service:
+    port: 8080
+
+  ingress:
+    enabled: true
+    host: mono-web.127.0.0.1.nip.io

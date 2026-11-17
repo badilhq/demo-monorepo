@@ -1,0 +1,10 @@
+apiVersion: v2
+name: mono-web
+description: demo-monorepo web - static site on nginx
+version: 0.1.0
+appVersion: "0.1.0"
+dependencies:
+  - name: app
+    version: 0.3.0
+    repository: oci://ghcr.io/badilhq/charts
+    alias: app

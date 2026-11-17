@@ -1,0 +1,10 @@
+apiVersion: v2
+name: mono-api
+description: demo-monorepo api - Go HTTP service
+version: 0.1.0
+appVersion: "0.1.0"
+dependencies:
+  - name: app
+    version: 0.3.0
+    repository: oci://ghcr.io/badilhq/charts
+    alias: app
