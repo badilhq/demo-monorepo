@@ -14,6 +14,7 @@ func writeJSON(w http.ResponseWriter, v any) {
 	}
 }
 
+// newMux routes the api endpoints.
 func newMux() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, _ *http.Request) {
