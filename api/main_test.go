@@ -13,7 +13,7 @@ func TestHandlers(t *testing.T) {
 		want map[string]string
 	}{
 		{"/health", map[string]string{"status": "ok", "service": "api"}},
-		{"/hello", map[string]string{"service": "api", "message": "hello from the widened preview"}},
+		{"/hello", map[string]string{"service": "api", "message": "hello from api"}},
 	}
 	mux := newMux()
 	for _, tt := range tests {

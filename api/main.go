@@ -20,7 +20,7 @@ func newMux() *http.ServeMux {
 		writeJSON(w, map[string]string{"status": "ok", "service": "api"})
 	})
 	mux.HandleFunc("GET /hello", func(w http.ResponseWriter, _ *http.Request) {
-		writeJSON(w, map[string]string{"service": "api", "message": "hello from the widened preview"})
+		writeJSON(w, map[string]string{"service": "api", "message": "hello from api"})
 	})
 	return mux
 }
