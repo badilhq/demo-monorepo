@@ -61,3 +61,5 @@ docker build -t demo-monorepo-api api
 docker build -t demo-monorepo-web web
 for c in api/chart web/chart; do helm dependency build $c && helm lint $c && helm template mono $c; done
 ```
+
+This PR changes docs only.
